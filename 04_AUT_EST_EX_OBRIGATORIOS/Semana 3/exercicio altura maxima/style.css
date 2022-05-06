@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 20px;
+}
+
+span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input{
+    min-width: 250px ;
+    /*Faz as bordas ficarem redondas*/
+    border-radius: 100px;
+    border: 1px solid #000;
+    height: 35px;
+    margin-top: 15px;
+}
+
+input::placeholder{
+    margin-left: 25px !important;
+    font-style: italic;
+}
