@@ -1,1 +1,1 @@
-# Atividade - Curriculo com Javascript - Semana 4
+# Atividade - Curriculo com Jquery - Semana 4
