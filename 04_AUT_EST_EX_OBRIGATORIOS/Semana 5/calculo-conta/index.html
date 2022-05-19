@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio calculo de conta</title>
+    <script src="script.js"></script>
+    <style>
+        .text-align {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-align">
+        <span>Nome:</span><br>
+        <input type="text" id="nome" placeholder="digite o seu nome">
+        <br>
+        <br>
+        <span>Valor da conta</span><br>
+        <input type="number" id="valor" placeholder="digite o valor total">
+        <br>
+        <br>
+        <input type="submit" onclick="calculaConta(nome,valor)">
+    </div>
+
+    <p id="resultadoNome"></p>
+    <p id="resultadoConta"></p>
+</body>
+
+</html>
