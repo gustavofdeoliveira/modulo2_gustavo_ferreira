@@ -24,7 +24,7 @@
             display: block;
         }
         input,
-        label, .btn {
+        label, .btn, .resultado, .texto-resultado {
             width: 90%;
             margin-left: auto;
             margin-right: auto;
@@ -52,6 +52,13 @@
         .btn:hover {
             background-color: rgb(161, 105, 0);
         }
+        .resultado{
+            height: 45px;
+            background-color: #fff;
+            font-size: 22px;
+            text-align: center;
+            color: #000;
+        }
     </style>
 </head>
 
@@ -74,9 +81,11 @@
         <label for="valor2">Valor 2:</label><br>
         <input type="number" id="valor2">
 
-        <input class="btn" type="submit" onclick="calculadora()">
+        <input class="btn" type="submit" onclick="calculadora(valor1.value, valor2.value)">
+        <p class="texto-resultado">Resultado: </p>
+        <p class="resultado" id="resultado"></p>
     </div>
-    <p id="resultado"></p>
+    
 </body>
 <script src="script.js"></script>
 
