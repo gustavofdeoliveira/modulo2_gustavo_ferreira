@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,16 @@
     <title>Exercicio | Pagamento de Conta</title>
     <script src="script.js"></script>
 </head>
+
 <body>
-   <main>
-       
-           <span>Preço do Produto:</span>
-           <br>
-            <input type="text" id="valor" placeholder="Digit o valor">
-            <input type="submit" onclick="calcular()">
-       <p id="notasDez"></p>
-       <p id="notasCinco"></p>
-       <p id="notasUm"></p>
-   </main> 
+    <main>
+
+        <span>Preço do Produto:</span>
+        <br>
+        <input type="text" id="valor" placeholder="Digit o valor">
+        <input type="submit" onclick="calcular(valor.value)">
+        <p id="resultado"></p>
+    </main>
 </body>
+
 </html>

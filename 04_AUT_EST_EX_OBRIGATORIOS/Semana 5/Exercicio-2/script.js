@@ -1,33 +1,19 @@
-function calcular() {
-    var valor = document.getElementById("valor").value;
-    var notasDez = 0;
-    var notasCinco = 0;
-    var notasUm = 0;
-    if (valor > 10) {
-        while (valor / 10 && valor >= 10) {
-            notasDez++;
-            valor = valor - 10;
+
+function calcular(entrada) {
+    var notas = [1, 2, 5, 10, 20, 50, 100];
+    for (var i = 0; i < notas.length; i++) {
+        if (entrada >= notas[i]) {
+            var notaM = notas[i];
         }
     }
-    if (valor > 5) {
-        while (valor / 5 && valor >= 5) {
-            notasCinco++;
-            valor = valor - 5;
-        }
-    }
-    if (valor > 1) {
-        while (valor > 0) {
-            notasUm++;
-            valor = valor - 1;
-        }
-    }
-    if (notasDez != 0) {
-        document.getElementById("notasDez").innerHTML = notasDez + " notas(s) de R$10,00";
-    }
-    if (notasCinco != 0) {
-        document.getElementById("notasCinco").innerHTML = notasCinco + " notas(s) de R$5,00";
-    }
-    if (notasUm != 0) {
-        document.getElementById("notasUm").innerHTML = notasUm + " notas(s) de R$1,00";
+    var numN = entrada / notaM;
+    
+    document.getElementById("resultado").innerHTML += Math.floor(numN) + " notas de : " + notaM + "<br>";
+    resto = parseFloat(entrada % notaM);
+    if ((resto != 0) && (resto > 1)) {
+        calcular(resto);
+    } else if (resto != 0) {
+        document.getElementById("resultado").innerHTML += "Sobrou :" + resto;
     }
 }
+
