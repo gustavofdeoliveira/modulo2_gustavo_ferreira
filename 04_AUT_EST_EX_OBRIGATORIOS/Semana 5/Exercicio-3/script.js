@@ -1,9 +1,7 @@
-function formatar() {
-  let listString = document.getElementById("lista").value;
-  var listNumber = listString.split(',').map(Number);
-  var foco = document.getElementById("num").value;
+function formatar(numeros, foco) {
+  debugger
+  var listNumber = numeros.split(',').map(Number);
   Number.foco
-
 
   for (var i = 0; i < listNumber.length; i++) {
       for (var j = 0; j < (listNumber.length - i - 1); j++) {
@@ -20,7 +18,7 @@ function formatar() {
   for (i = 0; i <= size; i++) {
       var meio = Math.floor((esquerda + direita) / 2);
       if (meio == foco) {
-          document.getElementById("show").innerHTML = i + 1 + "° posição";
+          document.getElementById("resultado").innerHTML = i + 1 + "° posição";
       } else if (meio < foco) {
           esquerda = meio + 1;
       } else if (meio > foco) {

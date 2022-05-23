@@ -68,7 +68,9 @@
         <label for="valor">Digite os números desejados: Ex:(1, 2, 3)</label><br>
         <input type="text" id="valor">
         <br>
-        <input class="btn" type="submit" onclick="formatar(valor.value)">
+        <label for="valor">Digite o foco desejados:</label><br>
+        <input type="number" id="foco">
+        <input class="btn" type="submit" onclick="formatar(valor.value, foco.value)">
         <p class="texto-resultado">Resultado: </p>
         <p class="resultado" id="resultado"></p>
     </div>
