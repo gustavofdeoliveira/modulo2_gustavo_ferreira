@@ -118,7 +118,7 @@ function adicionarLinguagem(id, name) {
         name = '';
     }
     var input = '<div class="input"><div class="d-flex"><input type="text" id="nameLinguagem" value="' + name + '" placeholder="adicionar uma nova"><button class="pull-right" id="btn-excluir" onclick="removerLinguagem(' + id + ')"><i class="fa fa-times"aria-hidden="true"></i></button><button onclick="saveLinguagem(' + id + ')" class="pull-right" id="btn-edit"><i class="fa fa-floppy-o"aria-hidden="true"></i></button></div></div>';
-    document.getElementById("input").innerHTML = input;
+    $("#input").html(input);
 }
 
 function removerLinguagem() {
