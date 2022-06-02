@@ -60,9 +60,7 @@ var metodos = {
         }).done(function () {
             metodos.get();
         }).fail(function (msg) {
-            //console.log('FAIL');
         }).always(function (msg) {
-            //console.log('ALWAYS');
         });
 
     },
@@ -90,9 +88,9 @@ var metodos = {
             }).done(function () {
                 metodos.get();
             }).fail(function (msg) {
-                //console.log('FAIL');
+        
             }).always(function (msg) {
-                //console.log('ALWAYS');
+                
             });
         }
     },
@@ -106,9 +104,9 @@ var metodos = {
         }).done(function () {
             metodos.get();
         }).fail(function (msg) {
-            //console.log('FAIL');
+            
         }).always(function (msg) {
-            //console.log('ALWAYS');
+            
         });
 
 
