@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+
+<body>
+
+    <p>Digite o valor do produto</p>
+    <input id="valor" type="number" value="0">
+
+    <p>Digite a quantidade do produto</p>
+    <div style="display: flex;">
+    <input id="quantidade" type="number" value="0">
+    
+        <input type="button" value="+" onclick="aumentarQuant(quantidade.value)">
+        <input type="button" value="-" onclick="diminuirQuant(quantidade.value)">
+    </div>
+    <br>
+    <input type="button" value="Salvar" onclick="calcular(valor.value, quantidade.value)">
+    <p id="resultado"></p>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
