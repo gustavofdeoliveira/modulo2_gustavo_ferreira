@@ -4,8 +4,13 @@ $(document).ready(function () {
         var quant = parseInt($("#quantidade").val());
         var periodo = $("#periodo").val();
         if (periodo == "Diurno" && quant < 50) {
+            total = (quant * 200);
+        } else if (periodo == "Diurno" && quant > 50) {
             total = ((quant * 200) * 0.6);
-        } else if (periodo == "Noturno" && quant < 50) {
+        }
+        if (periodo == "Noturno" && quant < 50) {
+            total = ((quant * 100));
+        } else if (periodo == "Noturno" && quant > 50) {
             total = ((quant * 100) * 0.8);
         }
         $("#resultado").html(total);
