@@ -1,1 +1,1 @@
-# Atividade - Curriculo com Javascript - Semana 7
+# Atividade - Curriculo com Ajax - Semana 8
