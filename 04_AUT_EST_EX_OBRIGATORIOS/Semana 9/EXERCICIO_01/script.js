@@ -10,7 +10,8 @@ $(document).ready(function () {
     $("#btn").on("click", function () {
         var number = $("#number").val();
         centena = Number(number[0]);
-        if (number >= 100 || number != "") {
+        if (number >= 100 && number != "") {
+            debugger
             if (centena % 2 == 0) {
                 resultado = "A centena é par";
             } else {
@@ -19,7 +20,6 @@ $(document).ready(function () {
            
         }else{
             resultado = "Digite um número valdio! Ex: 100";
-
         }
         $("#resultado").html(resultado);
     });
